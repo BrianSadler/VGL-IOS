@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add New Game-->
+        <scene sceneID="2Bb-hj-9v5">
+            <objects>
+                <viewController title="Add New Game" id="Nxg-4R-GCr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jvu-Vs-kap">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZxY-oI-huG" customClass="Add">
+                                <rect key="frame" x="8" y="64" width="359" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqx-GX-gP4">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ge-1i-bVa">
+                                        <rect key="frame" x="0.0" y="40.5" width="359" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKr-Jj-Ucl">
+                                        <rect key="frame" x="0.0" y="90.5" width="359" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pfu-RJ-pOx">
+                                        <rect key="frame" x="0.0" y="131" width="359" height="107"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7w-5c-9Ul">
+                                        <rect key="frame" x="0.0" y="258" width="359" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JZP-Ir-Oxm">
+                                        <rect key="frame" x="0.0" y="298.5" width="359" height="29"/>
+                                        <segments>
+                                            <segment title="E"/>
+                                            <segment title="E10+"/>
+                                            <segment title="T"/>
+                                            <segment title="M"/>
+                                            <segment title="AO"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUg-9u-Pes">
+                                        <rect key="frame" x="0.0" y="346.5" width="359" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RhP-tF-Ncg">
+                                        <rect key="frame" x="0.0" y="387" width="359" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Nxg-4R-GCr" id="tY0-PF-ZLd"/>
+                                            <outlet property="delegate" destination="Nxg-4R-GCr" id="l0a-Sx-plI"/>
+                                        </connections>
+                                    </pickerView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="RhP-tF-Ncg" secondAttribute="bottom" id="kgC-Sd-8jY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59911808099999997" green="1" blue="0.67400511080000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="r4n-Yk-ZDV" firstAttribute="bottom" secondItem="ZxY-oI-huG" secondAttribute="bottom" id="98C-vC-RBX"/>
+                            <constraint firstItem="r4n-Yk-ZDV" firstAttribute="trailing" secondItem="ZxY-oI-huG" secondAttribute="trailing" constant="8" id="Kak-wv-mv4"/>
+                            <constraint firstItem="ZxY-oI-huG" firstAttribute="top" secondItem="r4n-Yk-ZDV" secondAttribute="top" id="Ygf-if-fJC"/>
+                            <constraint firstItem="ZxY-oI-huG" firstAttribute="leading" secondItem="r4n-Yk-ZDV" secondAttribute="leading" constant="8" id="dc7-PY-ZUC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="r4n-Yk-ZDV"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add New Game" id="UIv-JE-vVJ">
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="Ecf-WU-IcB">
+                            <connections>
+                                <action selector="submitButtonTapped:" destination="Nxg-4R-GCr" id="ZPI-HK-ico"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="gameDescriptionTextField" destination="pfu-RJ-pOx" id="dZb-H6-grT"/>
+                        <outlet property="gameDescriptionTextView" destination="pfu-RJ-pOx" id="rUx-2o-cxo"/>
+                        <outlet property="gameRating" destination="ZxY-oI-huG" id="0yi-K7-t9c"/>
+                        <outlet property="gameRatingSegmentedControl" destination="JZP-Ir-Oxm" id="C8m-jw-20I"/>
+                        <outlet property="gameRatingSelection" destination="JZP-Ir-Oxm" id="tJG-c0-afk"/>
+                        <outlet property="gameTitleTextField" destination="7ge-1i-bVa" id="SXr-qf-4cs"/>
+                        <outlet property="genre" destination="RhP-tF-Ncg" id="Zg7-0e-QFW"/>
+                        <segue destination="d7r-rW-D09" kind="unwind" identifier="unwindToGameList" unwindAction="unwindToGameListWithSegue:" id="g6c-zz-TDe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HiJ-1o-pjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="d7r-rW-D09" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="359" y="-14"/>
+        </scene>
+    </scenes>
+</document>

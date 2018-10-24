@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yZp-b2-966">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit Game-->
+        <scene sceneID="Mx2-Dg-ZFv">
+            <objects>
+                <viewController title="Edit Game" id="yZp-b2-966" customClass="EditGame" customModule="VGL_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eq9-bb-naf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jYY-MP-gtU" customClass="Add">
+                                <rect key="frame" x="8" y="64" width="359" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WV0-1H-J9p">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x25-zg-cNK">
+                                        <rect key="frame" x="0.0" y="40.5" width="359" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5g-hq-cgs">
+                                        <rect key="frame" x="0.0" y="90.5" width="359" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="I0P-eR-lnv">
+                                        <rect key="frame" x="0.0" y="131" width="359" height="107"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPc-q5-rIK">
+                                        <rect key="frame" x="0.0" y="258" width="359" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="paN-fi-z1Q">
+                                        <rect key="frame" x="0.0" y="298.5" width="359" height="29"/>
+                                        <segments>
+                                            <segment title="E"/>
+                                            <segment title="E10+"/>
+                                            <segment title="T"/>
+                                            <segment title="M"/>
+                                            <segment title="AO"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONg-cK-NZl">
+                                        <rect key="frame" x="0.0" y="346.5" width="359" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pg-PQ-SF3">
+                                        <rect key="frame" x="0.0" y="387" width="359" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="yZp-b2-966" id="rbl-SI-f7W"/>
+                                            <outlet property="delegate" destination="yZp-b2-966" id="ze3-bV-ZoW"/>
+                                        </connections>
+                                    </pickerView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="4pg-PQ-SF3" secondAttribute="bottom" id="Wkg-iS-1e9"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59911808099999997" green="1" blue="0.67400511080000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="jYY-MP-gtU" firstAttribute="leading" secondItem="uGs-r7-8sS" secondAttribute="leading" constant="8" id="Mzn-KO-hNz"/>
+                            <constraint firstItem="uGs-r7-8sS" firstAttribute="bottom" secondItem="jYY-MP-gtU" secondAttribute="bottom" id="ab5-dW-YSn"/>
+                            <constraint firstItem="jYY-MP-gtU" firstAttribute="top" secondItem="uGs-r7-8sS" secondAttribute="top" id="dF7-yP-zmZ"/>
+                            <constraint firstItem="uGs-r7-8sS" firstAttribute="trailing" secondItem="jYY-MP-gtU" secondAttribute="trailing" constant="8" id="ws9-hb-vx9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uGs-r7-8sS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Game" id="I8h-4C-EJV">
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="T1C-su-Vce">
+                            <connections>
+                                <action selector="submitButtonTapped:" destination="yZp-b2-966" id="tVl-7X-kSd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="editGameDescription" destination="I0P-eR-lnv" id="kOB-bo-OtB"/>
+                        <outlet property="editGameGenre" destination="4pg-PQ-SF3" id="TM3-cs-7l5"/>
+                        <outlet property="editGameRating" destination="paN-fi-z1Q" id="UlT-9A-qSS"/>
+                        <outlet property="editGameTitle" destination="x25-zg-cNK" id="Owo-ag-oup"/>
+                        <segue destination="5qR-M2-fqK" kind="unwind" identifier="unwindToGameLIst" unwindAction="unwindToAddGameWithSegue:" id="3nt-F9-JBf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1jm-Yt-4pT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="5qR-M2-fqK" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="359" y="-14"/>
+        </scene>
+    </scenes>
+</document>
