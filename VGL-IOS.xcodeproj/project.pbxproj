@@ -19,6 +19,7 @@
 		20AD7992217D84CB0015A969 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD7991217D84CB0015A969 /* DateFormat.swift */; };
 		20AD7994217D87ED0015A969 /* AddNewGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AD7993217D87ED0015A969 /* AddNewGame.storyboard */; };
 		20AD7996217E1D650015A969 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 20AD7995217E1D640015A969 /* AppIcon.appiconset */; };
+		20DBE16C218C95A000DC80D7 /* GameDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DBE16B218C95A000DC80D7 /* GameDetailsViewController.swift */; };
 		20E104212176233000D0D5F2 /* VideoGameClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E104202176233000D0D5F2 /* VideoGameClass.swift */; };
 		20E10424217653D700D0D5F2 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E10423217653D700D0D5F2 /* GameTableViewCell.swift */; };
 		7A0E7537A3EEB48E55E16D94 /* Pods_VGL_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF5C388B16411B20713FD42 /* Pods_VGL_IOS.framework */; };
@@ -39,6 +40,7 @@
 		20AD7991217D84CB0015A969 /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
 		20AD7993217D87ED0015A969 /* AddNewGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNewGame.storyboard; sourceTree = "<group>"; };
 		20AD7995217E1D640015A969 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
+		20DBE16B218C95A000DC80D7 /* GameDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailsViewController.swift; sourceTree = "<group>"; };
 		20E104202176233000D0D5F2 /* VideoGameClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGameClass.swift; sourceTree = "<group>"; };
 		20E10423217653D700D0D5F2 /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
 		4CF5C388B16411B20713FD42 /* Pods_VGL_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VGL_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				203F5316217508AA00624B2A /* ViewController.swift */,
+				20DBE16B218C95A000DC80D7 /* GameDetailsViewController.swift */,
 				20AD798D217D7DDD0015A969 /* EditGame.swift */,
 				204F9DDA217F5D4300716165 /* AddGameViewController.swift */,
 				20D8FCF521801D0300AE30C3 /* Utility */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E10424217653D700D0D5F2 /* GameTableViewCell.swift in Sources */,
+				20DBE16C218C95A000DC80D7 /* GameDetailsViewController.swift in Sources */,
 				20AD7990217D81A50015A969 /* GameManager.swift in Sources */,
 				203F5317217508AA00624B2A /* ViewController.swift in Sources */,
 				203F5315217508AA00624B2A /* AppDelegate.swift in Sources */,

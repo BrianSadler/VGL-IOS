@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Km-mc-Xgh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Km-mc-Xgh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -84,7 +84,6 @@
                                             <outlet property="gameRating" destination="Akr-Da-Dvc" id="T00-1b-e5X"/>
                                             <outlet property="gameTitle" destination="xFG-T1-NlR" id="K3e-UA-WjI"/>
                                             <outlet property="genreLabel" destination="GpR-Te-6l6" id="Jqq-R3-htb"/>
-                                            <segue destination="7jV-46-YSL" kind="show" id="D7c-RL-NxB"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -118,17 +117,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
-        </scene>
-        <!--GameDetails-->
-        <scene sceneID="Ceu-Cc-HXJ">
-            <objects>
-                <viewControllerPlaceholder storyboardName="GameDetails" id="7jV-46-YSL" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VMH-UQ-6Cr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationItem title="Brian's Video Game Libray" id="ghi-c2-mKF">
-                    <barButtonItem key="rightBarButtonItem" systemItem="add" id="rG3-Hl-2MZ"/>
-                </navigationItem>
-            </objects>
-            <point key="canvasLocation" x="1076" y="609"/>
         </scene>
         <!--EditGame-->
         <scene sceneID="ajM-dM-IbL">
